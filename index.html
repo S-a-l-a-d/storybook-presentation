@@ -1,40 +1,72 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>Introduction to Storybook</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/black.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-auto-animate>
+                    <script type="text/template">
+                        # Introduction to Storybook
+                    </script>
+                </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+                <section data-markdown data-auto-animate data-separator-vertical="^\n\n">
+                    <script type="text/template">
+                        ## The Evolution of Websites
+                        
+                        * Static <!-- .element: class="fragment" -->
+                        * Dynamic <!-- .element: class="fragment" -->
+                        * Single Page Application <!-- .element: class="fragment" -->
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+                        Note: Let's go back in time. Websites used to be small. They were just static
+                        from the beginning. There was too little we could do with a static website,
+                        so here came the dynamic websites. In a dynamic website, or, a web Application
+                        is what we call nowadays, the users can interact and do many things.
+                        But they demand more and technologies also evolve, and SPA was born.
+
+
+                        ## The Evolution of Websites
+        
+                        By using front-end frameworks, we are applying the *Component-Driven Development* methodology
+
+                        Note: We build user interfaces from the bottom up. We start by building basic components
+                        and combine them together to create the whole page.
+                    </script>
+                </section>
+
+                <section data-markdown data-auto-animate>
+                    <script type="text/template">
+                        ## The Situation
+                    </script>
+                </section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealNotes ]
+            });
+        </script>
+    </body>
 </html>
