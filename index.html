@@ -9,14 +9,11 @@
         <link rel="stylesheet" href="dist/reset.css">
         <link rel="stylesheet" href="dist/reveal.css">
         <link rel="stylesheet" href="dist/theme/black.css">
-
-        <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="plugin/highlight/monokai.css">
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
-                <section data-markdown data-auto-animate>
+                <section data-markdown>
                     <script type="text/template">
                         # Introduction to Storybook
                     </script>
@@ -30,25 +27,160 @@
                         * Dynamic <!-- .element: class="fragment" -->
                         * Single Page Application <!-- .element: class="fragment" -->
 
-                        Note: Let's go back in time. Websites used to be small. They were just static
-                        from the beginning. There was too little we could do with a static website,
-                        so here came the dynamic websites. In a dynamic website, or, a web Application
-                        is what we call nowadays, the users can interact and do many things.
-                        But they demand more and technologies also evolve, and SPA was born.
+                        Note: Websites used to be small. They were just static from the beginning.
+                        There was too little we could do with a static website,
+                        so here came the dynamic websites. But the users are demanding and technologies
+                        have also evolved. SPA is now dominating over the market.
 
 
                         ## The Evolution of Websites
         
-                        By using front-end frameworks, we are applying the *Component-Driven Development* methodology
+                        By using front-end frameworks, we are applying the *Component-Driven Development*
+                        methodology to our web development.
 
-                        Note: We build user interfaces from the bottom up by starting with basic components
+                        Note:
+                        We build user interfaces from the bottom up by starting with basic components
                         and combine them together to create the whole page.
                     </script>
                 </section>
 
                 <section data-markdown data-auto-animate>
                     <script type="text/template">
-                        ## The Situation
+                        ## The Problems
+
+                        Note: As we keep building components and the app keeps growing,
+                        that leads to a few problems.
+                        ---
+                        ## The Problems
+
+                        * We may be building a component that already exists
+                        ---
+                        ## The Problems
+
+                        * We may be building a component that already exists
+                        * We cannot find the component we need
+                        ---
+                        ## The Problems
+
+                        * We may be building a component that already exists
+                        * We cannot find the component we need
+                        * We do not know how it looks like in different states
+                        ---
+                        ## The Problems
+
+                        * We may be building a component that already exists
+                        * We cannot find the component we need
+                        * We do not know how it looks like in different states
+                        * We do not know how a recent change affected it
+                    </script>
+                </section>
+
+                <section data-markdown data-auto-animate>
+                    <script type="text/template">
+                        ## The Solution
+
+                        Component explorers <!-- .element: class="fragment" -->
+                        ---
+                        ## The Solution
+
+                        Component explorers
+
+                        * Improved component discoverability
+                        * Documentation
+                        * Isolated component development
+
+                        Note:
+                        * We can now explore our components
+                        * We can try every state of a component to see how it looks like
+                    </script>
+                </section>
+
+                <section data-markdown data-auto-animate>
+                    <script type="text/template">
+                        ## Storybook
+
+                        <video data-autoplay data-src="assets/storybook-hero-video-optimized-lg.mp4" style="height: 60vh;"></video>
+                        ---
+                        ## Storybook
+                        
+                        * Build user interfaces in isolation
+                        * Mock hard to reach use cases
+                        * Document use cases as stories
+                        * Supercharge your workflow with addons
+
+                        <video data-autoplay data-src="assets/storybook-workflow-build-optimized-lg.mp4" style="height: 30vh;"></video>
+
+                        Note:
+                        * Implement components and pages without needing to fuss with data, APIs, or business logic.
+                        * Render components in key states that are tricky to reproduce in an app.
+                        * Save use cases as stories in plain JavaScript to revisit during development, testing, and QA.
+                        * Use addons to customize your workflow, automate testing, and integrate with your favorite tools.
+                        ---
+                        ## Storybook
+
+                        * Spot test in a glance
+                        * Visual test appearance
+                        * Unit test functionality
+                        * Accessibility test
+
+                        <video data-autoplay data-src="assets/storybook-workflow-test-optimized-lg.mp4" style="height: 30vh;"></video>
+
+                        Note:
+                        * Whenever you write a story you get a handy test case. Quickly browse stories to make sure your UI looks right.
+                        * Pinpoint UI changes down to the pixel by comparing image snapshots of stories.
+                        * Reuse stories in your unit tests to confirm nuanced functionality.
+                        ---
+                        ## Storybook
+
+                        * Find any component or page in your app
+                        * Get timely feedback during development
+                        * Share components across screens and apps
+                        * Generate user interface documentation automatically
+
+                        <video data-autoplay data-src="assets/storybook-workflow-share-optimized-lg.mp4" style="height: 30vh;"></video>
+
+                        Note:
+                        * Storybook is a searchable, single source of truth for your UI.
+                        * Publish Storybook online to give your team a universal reference point for feedback.
+                        * Every story is a use case that your team can find and reuse.
+                        * Write Markdown/MDX to generate a customizable site for component libraries and design systems.
+                    </script>
+                </section>
+
+                <section data-markdown data-auto-animate>
+                    <script type="text/template">
+                        ## Conclusion
+
+                        * Develop durable user interfaces
+                        * Test user interfaces with less effort
+                        * Document user interface to share with your team
+
+                        Note:
+                        * Storybook provides a sandbox to build UIs in isolation so you can develop hard-to-reach states and edge cases.
+                        * Stories are a reproducible way to keep track of UI edge cases. Write stories once then reuse them to power automated tests.
+                        * Stories show how UIs actually work not just how they're supposed to work. That makes gathering feedback and reproductions easy.
+                    </script>
+                </section>
+
+                <section data-markdown data-auto-animate>
+                    <script type="text/template">
+                        ## Demo <!-- .element: class="r-fit-text" -->
+                    </script>
+                </section>
+
+                <section data-markdown data-auto-animate>
+                    <script type="text/template">
+                        ## Discussion <!-- .element: class="r-fit-text" -->
+                    </script>
+                </section>
+
+                <section data-markdown data-auto-animate>
+                    <script type="text/template">
+                        ## Resources
+
+                        * [Storybook homepage](https://storybook.js.org) <!-- .element: target="_blank" -->
+                        * [UI component explorers](https://www.chromatic.com/blog/ui-component-explorers---your-new-favorite-tool) <!-- .element: target="_blank" -->
+                        * [Component Story Format](https://storybook.js.org/docs/react/api/csf) <!-- .element: target="_blank" -->
                     </script>
                 </section>
             </div>
